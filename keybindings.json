@@ -1,0 +1,15 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "command": "vscode-neovim.send",
+    "key": "alt+j",
+    "args": "<A-j>"
+  },
+  {
+    "command": "vscode-neovim.send",
+    "key": "alt+k",
+    "args": "<A-k>"
+  },
+  { "command": "vscode-neovim.send", "key": "ctrl+d", "args": "<C-d>" },
+  { "command": "vscode-neovim.send", "key": "ctrl+u", "args": "<C-u>" }
+]
