@@ -318,8 +318,6 @@
     "version": "10.1.0",
     "location": {
       "$mid": 1,
-      "fsPath": "c:\\Users\\Albin\\.vscode\\extensions\\esbenp.prettier-vscode-10.1.0",
-      "_sep": 1,
       "path": "/c:/Users/Albin/.vscode/extensions/esbenp.prettier-vscode-10.1.0",
       "scheme": "file"
     },
@@ -333,6 +331,33 @@
       "isPreReleaseVersion": false,
       "hasPreReleaseVersion": false,
       "installedTimestamp": 1708260050531,
+      "pinned": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "qwtel.sqlite-viewer",
+      "uuid": "94fef082-6c2d-43ac-9540-6617b51a3a12"
+    },
+    "version": "0.3.13",
+    "location": {
+      "$mid": 1,
+      "fsPath": "c:\\Users\\Albin\\.vscode\\extensions\\qwtel.sqlite-viewer-0.3.13",
+      "_sep": 1,
+      "external": "file:///c%3A/Users/Albin/.vscode/extensions/qwtel.sqlite-viewer-0.3.13",
+      "path": "/c:/Users/Albin/.vscode/extensions/qwtel.sqlite-viewer-0.3.13",
+      "scheme": "file"
+    },
+    "relativeLocation": "qwtel.sqlite-viewer-0.3.13",
+    "metadata": {
+      "id": "94fef082-6c2d-43ac-9540-6617b51a3a12",
+      "publisherId": "b3acfe79-c3a8-4770-9d00-986c299f8516",
+      "publisherDisplayName": "Florian Klampfer",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "hasPreReleaseVersion": false,
+      "installedTimestamp": 1708262946885,
       "pinned": false
     }
   }
