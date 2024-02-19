@@ -264,30 +264,6 @@
   },
   {
     "identifier": {
-      "id": "pkief.material-icon-theme",
-      "uuid": "5db78037-f674-459f-a236-db622c427c5b"
-    },
-    "version": "4.33.0",
-    "location": {
-      "$mid": 1,
-      "path": "/c:/Users/Albin/.vscode/extensions/pkief.material-icon-theme-4.33.0",
-      "scheme": "file"
-    },
-    "relativeLocation": "pkief.material-icon-theme-4.33.0",
-    "metadata": {
-      "id": "5db78037-f674-459f-a236-db622c427c5b",
-      "publisherId": "f9e5bc2f-fea1-4075-917f-d83e01e69f56",
-      "publisherDisplayName": "Philipp Kief",
-      "targetPlatform": "undefined",
-      "updated": false,
-      "isPreReleaseVersion": false,
-      "hasPreReleaseVersion": false,
-      "installedTimestamp": 1708258738520,
-      "pinned": false
-    }
-  },
-  {
-    "identifier": {
       "id": "christian-kohler.path-intellisense",
       "uuid": "a41c1549-4053-44d4-bf30-60fc809b4a86"
     },
@@ -342,9 +318,6 @@
     "version": "0.3.13",
     "location": {
       "$mid": 1,
-      "fsPath": "c:\\Users\\Albin\\.vscode\\extensions\\qwtel.sqlite-viewer-0.3.13",
-      "_sep": 1,
-      "external": "file:///c%3A/Users/Albin/.vscode/extensions/qwtel.sqlite-viewer-0.3.13",
       "path": "/c:/Users/Albin/.vscode/extensions/qwtel.sqlite-viewer-0.3.13",
       "scheme": "file"
     },
@@ -358,6 +331,58 @@
       "isPreReleaseVersion": false,
       "hasPreReleaseVersion": false,
       "installedTimestamp": 1708262946885,
+      "pinned": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "pkief.material-icon-theme",
+      "uuid": "5db78037-f674-459f-a236-db622c427c5b"
+    },
+    "version": "4.34.0",
+    "location": {
+      "$mid": 1,
+      "path": "/c:/Users/Albin/.vscode/extensions/pkief.material-icon-theme-4.34.0",
+      "scheme": "file"
+    },
+    "relativeLocation": "pkief.material-icon-theme-4.34.0",
+    "metadata": {
+      "id": "5db78037-f674-459f-a236-db622c427c5b",
+      "publisherId": "f9e5bc2f-fea1-4075-917f-d83e01e69f56",
+      "publisherDisplayName": "Philipp Kief",
+      "targetPlatform": "undefined",
+      "isApplicationScoped": false,
+      "updated": true,
+      "isPreReleaseVersion": false,
+      "hasPreReleaseVersion": false,
+      "installedTimestamp": 1708332247482,
+      "pinned": false,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "drcika.apc-extension",
+      "uuid": "c445982f-a615-472b-a90e-0a9edd88b8e8"
+    },
+    "version": "0.3.6",
+    "location": {
+      "$mid": 1,
+      "fsPath": "c:\\Users\\Albin\\.vscode\\extensions\\drcika.apc-extension-0.3.6",
+      "_sep": 1,
+      "path": "/c:/Users/Albin/.vscode/extensions/drcika.apc-extension-0.3.6",
+      "scheme": "file"
+    },
+    "relativeLocation": "drcika.apc-extension-0.3.6",
+    "metadata": {
+      "id": "c445982f-a615-472b-a90e-0a9edd88b8e8",
+      "publisherId": "4339fafa-4bed-499a-af81-4eb425456c60",
+      "publisherDisplayName": "drcika",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "hasPreReleaseVersion": false,
+      "installedTimestamp": 1708332329986,
       "pinned": false
     }
   }

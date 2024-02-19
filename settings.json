@@ -10,7 +10,7 @@
   "git.confirmSync": false,
   "git.autofetch": true,
   "files.autoSave": "afterDelay",
-  "python.analysis.inlayHints.callArgumentNames": "all",
+  "python.analysis.inlayHints.callArgumentNames": "partial",
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.inlayHints.pytestParameters": true,
   "python.analysis.inlayHints.variableTypes": true,
@@ -21,5 +21,34 @@
     "editor.defaultFormatter": "charliermarsh.ruff",
   },
   "editor.cursorSurroundingLines": 10,
-  "workbench.tree.renderIndentGuides": "always"
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.editorAssociations": {
+    "*.db": "sqlite-viewer.option"
+  },
+  "python.analysis.exclude": [
+    "**/.venv",
+    ".venv/*"
+  ],
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.size": "proportional",
+  "editor.smoothScrolling": true,
+  "editor.lineNumbers": "relative",
+  "workbench.activityBar.location": "top",
+  "workbench.sideBar.location": "right",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.minimap.showSlider": "mouseover",
+  "editor.fontLigatures": true,
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false,
+  "apc.electron": {
+    "frame": false,
+    "titleBarStyle": "hiddenInset",
+  },
+  "apc.statusBar": {
+    "position": "editor-bottom"
+  },
+  "apc.activityBar": {
+    "position": "top",
+    "size": 36
+  },
 }
