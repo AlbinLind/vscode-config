@@ -10,6 +10,7 @@
   "git.confirmSync": false,
   "git.autofetch": true,
   "files.autoSave": "afterDelay",
+  "testing.openTesting": "neverOpen",
   "python.analysis.inlayHints.callArgumentNames": "partial",
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.inlayHints.pytestParameters": true,
@@ -166,5 +167,5 @@
 
     // Pasting in visual mode will keep register
     {"before": ["p"], "after": ["p", "gv", "v", "y"]},
-  ]
+  ],
 }
