@@ -150,7 +150,9 @@
       "commands": ["editor.action.commentLine"]
     },
     // Quick fix / Actions
-    { "before": ["<leader>", "c", "a"], "commands": ["editor.action.quickFix"] }
+    { "before": ["<leader>", "c", "a"], "commands": ["editor.action.quickFix"] },
+    // K hovers
+    { "before": ["K"], "commands": ["editor.action.showHover"] },
   ],
   // Visual mode keybindings
   "vim.visualModeKeyBindingsNonRecursive": [

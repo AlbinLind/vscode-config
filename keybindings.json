@@ -52,5 +52,17 @@
     "key": "s",
     "command": "explorer.openToSide",
     "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+  },
+  // Quickfixes
+  // <C-n> moves to the next quickfix item in the list
+  {
+    "key": "ctrl+n",
+    "command": "selectNextCodeAction",
+    "when": "editorFocus && codeActionMenuVisible"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "selectPrevCodeAction",
+    "when": "editorFocus && codeActionMenuVisible"
   }
 ]
