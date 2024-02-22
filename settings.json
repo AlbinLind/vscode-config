@@ -159,6 +159,12 @@
       "commands": ["editor.action.commentLine"]
     },
     // Toggle case
-    { "before": ["<leader>", "u"], "after": ["~"] }
+    { "before": ["<leader>", "u"], "after": ["~"] },
+    // Indent will keep visual mode
+    { "before": [">"], "after": [">", "gv"]},
+    { "before": ["<"], "after": ["<", "gv"]},
+
+    // Pasting in visual mode will keep register
+    {"before": ["p"], "after": ["p", "gv", "v", "y"]},
   ]
 }
