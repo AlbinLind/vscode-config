@@ -113,7 +113,7 @@
     },
     // Close
     {
-      "before": ["<leader>", "w", "c"],
+      "before": ["<leader>", "w", " q"],
       "commands": ["workbench.action.closeActiveEditor"]
     },
     // Move to right
