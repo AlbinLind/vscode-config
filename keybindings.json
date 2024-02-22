@@ -1,28 +1,56 @@
 // Place your key bindings in this file to override the defaults
 [
+  // Move lines current line in normal mode and insert mode, and current selected lines in visual with alt j and alt k
   {
-    "command": "vscode-neovim.send",
     "key": "alt+j",
-    "args": "<A-j>"
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus"
   },
   {
-    "command": "vscode-neovim.send",
     "key": "alt+k",
-    "args": "<A-k>"
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus"
   },
-  { "command": "vscode-neovim.send", "key": "ctrl+d", "args": "<C-d>" },
-  { "command": "vscode-neovim.send", "key": "ctrl+u", "args": "<C-u>" },
-  { "command": "vscode-neovim.send", "key": "ctrl+h", "args": "<C-h>" },
-  { "command": "vscode-neovim.send", "key": "ctrl+j", "args": "<C-j>" },
-  { "command": "vscode-neovim.send", "key": "ctrl+k", "args": "<C-k>" },
-  { "command": "vscode-neovim.send", "key": "ctrl+l", "args": "<C-l>" },
-  
-  { "command": "vscode-neovim.send", "key": "ctrl+left", "args": "<C-Left>"},
+
+  // Git commands
+  { "key": "ctrl+up", "command": "git.stage", "when": "workbench.scm.active" },
   {
-    "command": "vscode-neovim.send",
-    "key": "ctrl+right",
-    "args": "<C-right>"
+    "key": "ctrl+down",
+    "command": "git.unstage",
+    "when": "workbench.scm.active"
   },
-  {"key": "ctrl+up", "command": "git.stage", "when": "workbench.scm.active"},
-  {"key": "ctrl+down", "command": "git.unstage", "when": "workbench.scm.active"},
+
+  // Terminal commands
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+
+  // File explorer
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "shift+d",
+    "command": "moveFileToTrash",
+    "when": "explorerResourceMoveableToTrash && explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "s",
+    "command": "explorer.openToSide",
+    "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+  }
 ]

@@ -4,12 +4,13 @@
   "workbench.colorTheme": "One Dark Pro",
   "editor.fontFamily": "'DejaVuSansM Nerd Fond Mono', Consolas, 'Courier New', monospace",
   "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
+    "vscodevim.vim": 1
   },
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "git.autofetch": true,
   "files.autoSave": "afterDelay",
+  "testing.openTesting": "neverOpen",
   "python.analysis.inlayHints.callArgumentNames": "partial",
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.inlayHints.pytestParameters": true,
@@ -18,17 +19,14 @@
   "python.analysis.typeCheckingMode": "standard",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.defaultFormatter": "charliermarsh.ruff"
   },
   "editor.cursorSurroundingLines": 10,
   "workbench.tree.renderIndentGuides": "always",
   "workbench.editorAssociations": {
     "*.db": "sqlite-viewer.option"
   },
-  "python.analysis.exclude": [
-    "**/.venv",
-    ".venv/*"
-  ],
+  "python.analysis.exclude": ["**/.venv", ".venv/*"],
   "editor.minimap.renderCharacters": false,
   "editor.minimap.size": "proportional",
   "editor.smoothScrolling": true,
@@ -42,7 +40,7 @@
   "window.commandCenter": false,
   "apc.electron": {
     "frame": false,
-    "titleBarStyle": "hiddenInset",
+    "titleBarStyle": "hiddenInset"
   },
   "apc.statusBar": {
     "position": "editor-bottom"
@@ -51,4 +49,123 @@
     "position": "top",
     "size": 36
   },
+  "remote.autoForwardPortsSource": "hybrid",
+  // Vim Keybindings
+  "vim.useSystemClipboard": true,
+  "vim.leader": "<space>",
+  // Vim should ignore these keybindings
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-s>": false
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // Search in files
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    // Search and replace
+    {
+      "before": ["<leader>", "s", "r"],
+      "commands": ["editor.action.startFindReplaceAction"]
+    },
+    // Similar to telescope.nvim
+    {
+      "before": ["<leader>", "<leader>"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    // Open Command Palette
+    {
+      "before": ["<leader>", "c", "p"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    // Open file explorer
+    { "before": ["<leader>", "e"], "commands": ["workbench.view.explorer"] },
+    // Open Source control
+    { "before": ["<leader>", "g"], "commands": ["workbench.view.scm"] },
+    // Open Test Explorer
+    {
+      "before": ["<leader>", "c", "t"],
+      "commands": ["workbench.view.extension.test"]
+    },
+    // Open Terminal
+    {
+      "before": ["<leader>", "t"],
+      "commands": ["workbench.action.terminal.toggleTerminal"]
+    },
+    // Open Debug
+    { "before": ["<leader>", "c", "d"], "commands": ["workbench.view.debug"] },
+    // Start Debug
+    {
+      "before": ["<leader>", "d", "s"],
+      "commands": ["workbench.action.debug.start"]
+    },
+    // Add Breakpoint
+    {
+      "before": ["<leader>", "d", "b"],
+      "commands": ["editor.debug.action.toggleBreakpoint"]
+    },
+
+    // Window Management
+    // Split
+    {
+      "before": ["<leader>", "w", "s"],
+      "commands": ["workbench.action.splitEditor"]
+    },
+    // Close
+    {
+      "before": ["<leader>", "w", " q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    // Move to right
+    { "before": ["<C-l>"], "after": ["<C-w>", "l"] },
+    // Move to left
+    { "before": ["<C-h>"], "after": ["<C-w>", "h"] },
+    // Move to up
+    { "before": ["<C-k>"], "after": ["<C-w>", "k"] },
+    // Move to down
+    { "before": ["<C-j>"], "after": ["<C-w>", "j"] },
+
+    // Toggle sidebar
+    {
+      "before": ["<leader>", "s", "v"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+
+    // Always use n to search forward and N backwards
+    { "before": ["n"], "commands": ["editor.action.nextMatchFindAction"] },
+    { "before": ["N"], "commands": ["editor.action.previousMatchFindAction"] },
+
+    // Code keybindings
+    // Rename
+    { "before": ["<leader>", "c", "r"], "commands": ["editor.action.rename"] },
+    // Format
+    {
+      "before": ["<leader>", "c", "f"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    // Comment line
+    {
+      "before": ["<leader>", "c", "c"],
+      "commands": ["editor.action.commentLine"]
+    },
+    // Quick fix / Actions
+    { "before": ["<leader>", "c", "a"], "commands": ["editor.action.quickFix"] }
+  ],
+  // Visual mode keybindings
+  "vim.visualModeKeyBindingsNonRecursive": [
+    // Comment line
+    {
+      "before": ["<leader>", "c", "c"],
+      "commands": ["editor.action.commentLine"]
+    },
+    // Toggle case
+    { "before": ["<leader>", "u"], "after": ["~"] },
+    // Indent will keep visual mode
+    { "before": [">"], "after": [">", "gv"]},
+    { "before": ["<"], "after": ["<", "gv"]},
+
+    // Pasting in visual mode will keep register
+    {"before": ["p"], "after": ["p", "gv", "v", "y"]},
+  ],
 }
