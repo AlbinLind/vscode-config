@@ -51,4 +51,5 @@
     "position": "top",
     "size": 36
   },
+  "remote.autoForwardPortsSource": "hybrid",
 }
